@@ -1,17 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import UseState from './useState';
+import UseEffectFn from './useEffect';
+import UseRefFn from './useRef';
+import UseReducerFn from './useReducer';
+import UseCallbakFn from './useCallback';
+import UseMemoFn from './useMemo';
+import CustomHookFn from './CustomHook';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <>
+        <UseState />
+        <br /><br />
+        <UseEffectFn />
+        <br /><br />
+        <UseRefFn/>
+        <br /><br />
+        <UseReducerFn/>
+        <br /><br />
+        <UseCallbakFn/>
+        <br /><br />
+        <UseMemoFn/>
+        <br /><br />
+        <CustomHookFn/>
+    </>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
